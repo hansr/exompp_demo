@@ -1,0 +1,54 @@
+========================================
+About
+========================================
+exompp_demo.py is a fairly simple python script that demonstrates how to send
+data to the Exosite One Platform over XMPP.
+
+License is GPL 2 or later
+
+Built/tested with Python 2.6.5
+
+========================================
+Quick Start
+========================================
+****************************************
+1) install python
+****************************************
+http://www.python.org/download/
+http://www.python.org/download/releases/2.6.5/
+http://www.python.org/ftp/python/2.6.5/python-2.6.5.msi
+
+****************************************
+2) install xmpppy
+****************************************
+http://xmpppy.sourceforge.net/
+http://sourceforge.net/projects/xmpppy/
+http://sourceforge.net/projects/xmpppy/files/xmpppy/0.4.0/xmpppy-0.4.0.win32.exe/download
+
+
+****************************************
+3) install psutil
+****************************************
+--) download psutil and install (http://code.google.com/p/psutil/)
+--) test by running python command prompt and typing "import psutil,time" and then "print psutil.cput_times()"
+
+
+****************************************
+4) test xmpp communications 
+****************************************
+get python script "exosite.py" and (optionally) "options.cfg"
+--) in idle (Python Shell), select file->open and select the "exosite.py" script (it will open in a new window)
+--) check the script by selecting run->check module.  if no errors were generated, it is ready to run
+--) update the default credentials in options.cfg to use your xmpp login and device CIK
+--) run the script by pressing "F5" or by selecting run->run module
+--) click "start" next to one or more data sources (currently:cpu monitor, random, sawtooth)
+--) verify the app connects, creates a datasource and sends data (no errors should be generated)
+--) log into one.exosite.com and verify the data source is created and that data was generated
+* note, you can also just run python from any command prompt, but you have to have your environment PATH variable (or equivalent) setup correctly.  command prompt command is 'python exosite.py'
+
+
+****************************************
+5) tweak it
+****************************************
+--) add a 'print' command or something 
+--) play around, use it, extend it!
